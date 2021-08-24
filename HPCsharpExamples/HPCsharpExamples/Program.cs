@@ -31,10 +31,14 @@ namespace HPCsharpExamples
             bool equalSortedArraysOneAndThree = ArrayOne.SequenceEqual(ArrayThree);
             bool equalSortedArraysOneAndFour  = ArrayOne.SequenceEqual(ArrayFour);
             bool equalSortedArraysOneAndFive  = ArrayOne.SequenceEqual(ArrayFive);
-            bool equalSortedArraysOneAndSix   = ArrayOne.SequenceEqual(ArraySix);
+            bool equalSortedArraysOneAndSix = ArrayOne.SequenceEqual(ArraySix);
+            bool equalSortedArraysOneAndsortedArrayFour = ArrayOne.SequenceEqual(sortedArrayFour);
+            bool equalSortedArraysOneAndsortedArrayFive = ArrayOne.SequenceEqual(sortedArrayFive);
+            bool equalSortedArraysOneAndsortedArraySix = ArrayOne.SequenceEqual(sortedArraySix);
 
             if (equalSortedArraysOneAndTwo && equalSortedArraysOneAndThree && equalSortedArraysOneAndFour &&
-                equalSortedArraysOneAndFive && equalSortedArraysOneAndSix)
+                equalSortedArraysOneAndFive && equalSortedArraysOneAndSix && equalSortedArraysOneAndsortedArrayFour
+                && equalSortedArraysOneAndsortedArrayFive && equalSortedArraysOneAndsortedArraySix)
                 Console.WriteLine("Sorting for variety of Merge Sort(s) results are equal");
             else
                 Console.WriteLine("Sorting for variety of Merge Sort(s) results are not equal!");
